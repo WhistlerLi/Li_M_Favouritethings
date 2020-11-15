@@ -9,25 +9,24 @@
        Coffee Travel and Music
     </p>
 
+
     <div class="team">
-        <!-- loop through all our team members and put their info on the page -->
-        <!-- this is exactly like a forEach loop with plain JS -->
-        {{#each  people}}
-            <div class="user-panel">
-                <img class="u-avatar"  src="images/{{image}}" alt="avatar">
-                <a class="u-link" href="javascript:;">
-                    {{name}}
-                </a>
-                <p>
-                    {{type}} - {{nationality}}
-                </p>
-                <p>
-                    {{description}}
-                </p>
-            </div>
-        {{/each}}
-        
-    </div>
+            <!-- loop through all our team members and put their info on the page -->
+            <!-- this is exactly like a forEach loop with plain JS -->
+            {{#each  people}}
+                <div class="user-panel">
+                    <img class="u-avatar"  src="images/{{image}}" alt="avatar">
+                    <a class="u-link" href="{{id}}">
+                        {{name}}
+                    </a>
+                    <p>
+                        {{type}}
+                    </p>
+
+                </div>
+            {{/each}}
+
+        </div>
     </div>
 
     <!-- this will be filled in on the client side when we render our AJAX data -->
