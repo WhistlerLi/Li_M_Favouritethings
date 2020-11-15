@@ -34,5 +34,4 @@ Responsive one page app showcasing three of my favourite things. Project data is
 ### Acknowledgments
 Fanshawe College IDP3
 
-### Reference
-https://github.com/Trevor-FanshaweC/DayOne_Fall19.git"
+
