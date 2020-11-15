@@ -18,11 +18,12 @@ app.use((rep,res,next)=>{
     err.customMessage ="Oh noes! Something horrible happended!";
 
     next(err);
-})
+});
 app.use((err,req, res, next)=>{
+    return res.redirect('/');
     res.render('error',{data: err, layout:'error'});
-})
+});
 app.listen(port, () => {
     console.log(`app is running on ${port}`);
-})
+});
 

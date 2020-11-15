@@ -16,9 +16,10 @@ const myVM = (() => {
             targetImg = lightbox.querySelector('img');
 
         let bioContent = `
-            <p>${person.Price}</p>
-            <h4>Exhaust Price:</h4>
-            ${renderSocialMedia(person.Brand)}
+            <p>Name:${person.name}</p>
+            <h4>Type:${person.type}</h4>
+            <h4>Nationality:${person.nationality}</h4>
+            <p>Description:${person.description}</p>
             `;
 
             console.log(bioContent);
@@ -47,7 +48,8 @@ const myVM = (() => {
                 parseUserData(data[0]);
             })
             .catch((err) =>{
-                console.log(err)
+                res.render('error',{data: err, layout:'error'});
+
             });
     }
 
